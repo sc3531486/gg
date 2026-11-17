@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GWI Harness 管理端 · 全界面截图图廊</title>
+<style>
+  :root {
+    --bg:#f5f6f8; --panel:#fff; --ink:#1f2733; --muted:#6b7684;
+    --line:#e3e7ee; --brand:#2563eb; --brand-soft:#e8f0ff;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+  }
+  header {
+    background:linear-gradient(135deg,#1e3a8a,#2563eb 55%,#3b82f6);
+    color:#fff; padding:44px 40px 34px;
+  }
+  header h1 { margin:0 0 10px; font-size:30px; letter-spacing:.5px; }
+  header .sub { opacity:.9; font-size:15px; max-width:900px; }
+  header .meta { margin-top:18px; display:flex; flex-wrap:wrap; gap:10px 26px; font-size:13px; opacity:.92; }
+  header .meta b { font-weight:600; }
+  nav {
+    position:sticky; top:0; z-index:9; background:#fff; border-bottom:1px solid var(--line);
+    padding:10px 40px; display:flex; gap:8px; flex-wrap:wrap;
+  }
+  nav a {
+    text-decoration:none; color:var(--ink); font-size:13.5px; padding:6px 12px;
+    border:1px solid var(--line); border-radius:999px; background:#fafbfd;
+  }
+  nav a:hover { border-color:var(--brand); color:var(--brand); background:var(--brand-soft); }
+  nav a b { margin-left:6px; font-weight:600; color:var(--brand); }
+  main { padding:28px 40px 80px; max-width:1720px; margin:0 auto; }
+  section { margin-bottom:52px; scroll-margin-top:64px; }
+  h2 { font-size:21px; margin:0 0 6px; padding-bottom:10px; border-bottom:2px solid var(--brand); display:inline-block; }
+  h2 .cnt { font-size:13px; color:var(--muted); font-weight:400; margin-left:8px; }
+  .desc { color:var(--muted); font-size:14px; margin:10px 0 22px; max-width:1200px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(480px,1fr)); gap:22px; }
+  .card {
+    margin:0; background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; box-shadow:0 1px 3px rgba(20,30,50,.05); transition:.18s;
+  }
+  .card:hover { box-shadow:0 8px 24px rgba(20,30,50,.13); transform:translateY(-2px); }
+  .card img { display:block; width:100%; height:auto; background:#eef1f6; }
+  figcaption { padding:12px 15px 14px; border-top:1px solid var(--line); }
+  .t { font-size:14px; font-weight:600; margin-bottom:7px; line-height:1.5; }
+  .m { font-size:12px; color:var(--muted); display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .m code { background:#f2f5fa; padding:1px 6px; border-radius:4px; font-size:11.5px; }
+  .m .f { margin-left:auto; font-size:11px; opacity:.7; }
+  .kind { padding:1px 7px; border-radius:4px; font-size:11px; font-weight:600; }
+  .k-page { background:#e8f0ff; color:#2563eb; }
+  .k-dialog { background:#fff2e0; color:#b45309; }
+  .k-drawer { background:#e9f7ef; color:#047857; }
+  .k-tab { background:#f3e8ff; color:#7c3aed; }
+  .k-popover { background:#fee2e2; color:#b91c1c; }
+  footer { padding:26px 40px 60px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>GWI Harness 办公平台 · 管理端</h1>
+  <div class="sub">aiwork-admin 全菜单与功能界面截图图廊 —— 6 个目录 / 22 个页面级界面 / 63 张实拍截图，逐图标注路由与界面类型，配套文字说明见 <code>管理端功能说明.md</code>。</div>
+  <div class="meta">
+    <span><b>采集地址</b> http://10.20.101.79:30100</span>
+    <span><b>采集账号</b> admin（platform_admin，77 权限点）</span>
+    <span><b>采集时间</b> 2026-11-17 13:39:38</span>
+    <span><b>视口</b> 1600×950 @1.5x → 2400×1425 px</span>
+    <span><b>截图总数</b> 64 张</span>
+  </div>
+</header>
+<nav><a href="#00_登录">00 · 登录<b>2</b></a><a href="#01_总览">01 · 总览<b>1</b></a><a href="#02_云办公">02 · 云办公<b>5</b></a><a href="#03_能力管理">03 · 能力管理<b>18</b></a><a href="#04_模型管理">04 · 模型管理<b>4</b></a><a href="#05_运维管理">05 · 运维管理<b>2</b></a><a href="#06_能力授权">06 · 能力授权<b>10</b></a><a href="#07_系统设置">07 · 系统设置<b>20</b></a><a href="#99_差异证据">99 · 差异证据<b>2</b></a></nav>
+<main>
+  <section id="00_登录">
+    <h2>00 · 登录 <span class="cnt">2 张</span></h2>
+    <p class="desc">登录页与页头用户区。账号 admin / Admin@123（平台管理员，77 个权限点，全企业数据范围）。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/00_登录/00-1_登录页.png" target="_blank"><img loading="lazy" src="screens/00_登录/00-1_登录页.png" alt="登录页（品牌栏 + 账号表单 + 演示账号）"></a>
+        <figcaption>
+          <div class="t">登录页（品牌栏 + 账号表单 + 演示账号）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/login</code><span class="f">00-1_登录页.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/00_登录/00-2_头部用户菜单.png" target="_blank"><img loading="lazy" src="screens/00_登录/00-2_头部用户菜单.png" alt="页头用户菜单（角色 / 数据范围 / 退出登录）"></a>
+        <figcaption>
+          <div class="t">页头用户菜单（角色 / 数据范围 / 退出登录）</div>
+          <div class="m"><span class="kind k-popover">下拉</span>
+            <code>/overview</code><span class="f">00-2_头部用户菜单.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="01_总览">
+    <h2>01 · 总览 <span class="cnt">1 张</span></h2>
+    <p class="desc">管理端首页：欢迎语、4 项台账统计、5 个快速入口、本期交付范围说明。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/01_总览/01-1_总览页.png" target="_blank"><img loading="lazy" src="screens/01_总览/01-1_总览页.png" alt="总览：欢迎语 + 4 项统计卡 + 快速入口 + 本期交付说明"></a>
+        <figcaption>
+          <div class="t">总览：欢迎语 + 4 项统计卡 + 快速入口 + 本期交付说明</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/overview</code><span class="f">01-1_总览页.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="02_云办公">
+    <h2>02 · 云办公 <span class="cnt">5 张</span></h2>
+    <p class="desc">为每个用户开通独立 K8s 工作区（命名空间 gwih-&lt;工号&gt;），支持开通/变更/停止/回收四类操作，回收需输入工号二次确认。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/02_云办公/02-1_工作区管理列表.png" target="_blank"><img loading="lazy" src="screens/02_云办公/02-1_工作区管理列表.png" alt="工作区管理：2 个 K8s 工作区（状态/规格/存储/镜像/操作）"></a>
+        <figcaption>
+          <div class="t">工作区管理：2 个 K8s 工作区（状态/规格/存储/镜像/操作）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/workspace/list</code><span class="f">02-1_工作区管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/02_云办公/02-2_开通工作区.png" target="_blank"><img loading="lazy" src="screens/02_云办公/02-2_开通工作区.png" alt="开通工作区：按工号/姓名选人 + 镜像标签 + 存储"></a>
+        <figcaption>
+          <div class="t">开通工作区：按工号/姓名选人 + 镜像标签 + 存储</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/workspace/list</code><span class="f">02-2_开通工作区.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/02_云办公/02-3_变更工作区.png" target="_blank"><img loading="lazy" src="screens/02_云办公/02-3_变更工作区.png" alt="变更工作区：改镜像触发滚动重启"></a>
+        <figcaption>
+          <div class="t">变更工作区：改镜像触发滚动重启</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/workspace/list</code><span class="f">02-3_变更工作区.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/02_云办公/02-4_停止工作区确认.png" target="_blank"><img loading="lazy" src="screens/02_云办公/02-4_停止工作区确认.png" alt="停止工作区二次确认（释放内存、数据保留）"></a>
+        <figcaption>
+          <div class="t">停止工作区二次确认（释放内存、数据保留）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/workspace/list</code><span class="f">02-4_停止工作区确认.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/02_云办公/02-5_回收工作区确认.png" target="_blank"><img loading="lazy" src="screens/02_云办公/02-5_回收工作区确认.png" alt="回收工作区危险操作确认（需输入工号匹配）"></a>
+        <figcaption>
+          <div class="t">回收工作区危险操作确认（需输入工号匹配）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/workspace/list</code><span class="f">02-5_回收工作区确认.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="03_能力管理">
+    <h2>03 · 能力管理 <span class="cnt">18 张</span></h2>
+    <p class="desc">能力资产主干：技能、连接器、组件、专家与专家团、知识库（建设中）、审批中心、分类字典。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/03_能力管理/03-1_技能管理列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-1_技能管理列表.png" alt="技能管理：6 个技能（分类/载体/版本/调用量/负反馈/审核状态/上架状态）"></a>
+        <figcaption>
+          <div class="t">技能管理：6 个技能（分类/载体/版本/调用量/负反馈/审核状态/上架状态）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/skills</code><span class="f">03-1_技能管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-2_新增技能.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-2_新增技能.png" alt="新增技能：上传 SKILL.md、自动校验并回填名称说明"></a>
+        <figcaption>
+          <div class="t">新增技能：上传 SKILL.md、自动校验并回填名称说明</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/capability/skills</code><span class="f">03-2_新增技能.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-3_技能详情.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-3_技能详情.png" alt="技能详情：版本、调用量、可用性检查、对象存储"></a>
+        <figcaption>
+          <div class="t">技能详情：版本、调用量、可用性检查、对象存储</div>
+          <div class="m"><span class="kind k-drawer">抽屉</span>
+            <code>/capability/skills</code><span class="f">03-3_技能详情.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-4_连接器管理列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-4_连接器管理列表.png" alt="连接器管理：服务端注册 13 个连接器（接入方式/传输/工具数/探测）"></a>
+        <figcaption>
+          <div class="t">连接器管理：服务端注册 13 个连接器（接入方式/传输/工具数/探测）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/connectors</code><span class="f">03-4_连接器管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-5_新增连接器.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-5_新增连接器.png" alt="新增连接器向导：接入方式 / 凭证引用 / 连通性探测"></a>
+        <figcaption>
+          <div class="t">新增连接器向导：接入方式 / 凭证引用 / 连通性探测</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/capability/connectors</code><span class="f">03-5_新增连接器.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-6_连接器详情.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-6_连接器详情.png" alt="连接器详情：鉴权、最近探测、写工具、生效授权、引用关系"></a>
+        <figcaption>
+          <div class="t">连接器详情：鉴权、最近探测、写工具、生效授权、引用关系</div>
+          <div class="m"><span class="kind k-drawer">抽屉</span>
+            <code>/capability/connectors</code><span class="f">03-6_连接器详情.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-7_连接器_端侧自动发现.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-7_连接器_端侧自动发现.png" alt="连接器「端侧自动发现」标签（只读）"></a>
+        <figcaption>
+          <div class="t">连接器「端侧自动发现」标签（只读）</div>
+          <div class="m"><span class="kind k-tab">标签页</span>
+            <code>/capability/connectors</code><span class="f">03-7_连接器_端侧自动发现.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-8_组件管理列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-8_组件管理列表.png" alt="组件管理：5 个组件 + 插件市场源配置卡"></a>
+        <figcaption>
+          <div class="t">组件管理：5 个组件 + 插件市场源配置卡</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/components</code><span class="f">03-8_组件管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-9_上传组件.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-9_上传组件.png" alt="上传组件：插件包 zip → 待审核 → 审批后上架"></a>
+        <figcaption>
+          <div class="t">上传组件：插件包 zip → 待审核 → 审批后上架</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/capability/components</code><span class="f">03-9_上传组件.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-10_组件详情.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-10_组件详情.png" alt="组件详情：当前版本、版本数、授权引用、切换版本"></a>
+        <figcaption>
+          <div class="t">组件详情：当前版本、版本数、授权引用、切换版本</div>
+          <div class="m"><span class="kind k-drawer">抽屉</span>
+            <code>/capability/components</code><span class="f">03-10_组件详情.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-11_专家管理列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-11_专家管理列表.png" alt="专家与专家团：9 个专家（分类/版本/摘要/工具白名单/审核与上架状态）"></a>
+        <figcaption>
+          <div class="t">专家与专家团：9 个专家（分类/版本/摘要/工具白名单/审核与上架状态）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/experts</code><span class="f">03-11_专家管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-12_上传专家包.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-12_上传专家包.png" alt="上传专家包：压缩包 / 本地文件夹 / 安装包三种方式"></a>
+        <figcaption>
+          <div class="t">上传专家包：压缩包 / 本地文件夹 / 安装包三种方式</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/capability/experts</code><span class="f">03-12_上传专家包.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-13_专家团列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-13_专家团列表.png" alt="专家团标签页（3 个团队：编排/成员/协作模式）"></a>
+        <figcaption>
+          <div class="t">专家团标签页（3 个团队：编排/成员/协作模式）</div>
+          <div class="m"><span class="kind k-tab">标签页</span>
+            <code>/capability/experts</code><span class="f">03-13_专家团列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-14_知识库管理.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-14_知识库管理.png" alt="知识库管理：模块建设中空态 + 规划能力清单"></a>
+        <figcaption>
+          <div class="t">知识库管理：模块建设中空态 + 规划能力清单</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/knowledge</code><span class="f">03-14_知识库管理.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-15_审批中心列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-15_审批中心列表.png" alt="审批中心：4 条待审批工单（类型/目标/申请人/提交时间/等待/状态/结论）"></a>
+        <figcaption>
+          <div class="t">审批中心：4 条待审批工单（类型/目标/申请人/提交时间/等待/状态/结论）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/approval</code><span class="f">03-15_审批中心列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-16_审批详情.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-16_审批详情.png" alt="审批详情：提交快照、正文指纹、配置预览、流转记录、通过/驳回"></a>
+        <figcaption>
+          <div class="t">审批详情：提交快照、正文指纹、配置预览、流转记录、通过/驳回</div>
+          <div class="m"><span class="kind k-drawer">抽屉</span>
+            <code>/capability/approval</code><span class="f">03-16_审批详情.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-17_分类管理列表.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-17_分类管理列表.png" alt="分类管理：8 条能力分类字典（含专家数）"></a>
+        <figcaption>
+          <div class="t">分类管理：8 条能力分类字典（含专家数）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/capability/categories</code><span class="f">03-17_分类管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/03_能力管理/03-18_新增分类.png" target="_blank"><img loading="lazy" src="screens/03_能力管理/03-18_新增分类.png" alt="新增分类：名称 + 描述"></a>
+        <figcaption>
+          <div class="t">新增分类：名称 + 描述</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/capability/categories</code><span class="f">03-18_新增分类.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="04_模型管理">
+    <h2>04 · 模型管理 <span class="cnt">4 张</span></h2>
+    <p class="desc">模型网关登记与人员额度下发；用量统计按模型/部门/用户三维度看 token 消耗与额度使用率。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/04_模型管理/04-1_模型列表.png" target="_blank"><img loading="lazy" src="screens/04_模型管理/04-1_模型列表.png" alt="模型列表：3 个模型（协议/上游/密钥掩码/上下文窗口/能力开关）"></a>
+        <figcaption>
+          <div class="t">模型列表：3 个模型（协议/上游/密钥掩码/上下文窗口/能力开关）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/model/list</code><span class="f">04-1_模型列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/04_模型管理/04-2_新建模型.png" target="_blank"><img loading="lazy" src="screens/04_模型管理/04-2_新建模型.png" alt="新建模型：编码/协议/上游模型/密钥/测试连接/能力开关"></a>
+        <figcaption>
+          <div class="t">新建模型：编码/协议/上游模型/密钥/测试连接/能力开关</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/model/list</code><span class="f">04-2_新建模型.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/04_模型管理/04-3_模型详情与人员额度.png" target="_blank"><img loading="lazy" src="screens/04_模型管理/04-3_模型详情与人员额度.png" alt="模型详情：绑定人员、额度调整（增量/绝对值）"></a>
+        <figcaption>
+          <div class="t">模型详情：绑定人员、额度调整（增量/绝对值）</div>
+          <div class="m"><span class="kind k-drawer">抽屉</span>
+            <code>/model/list</code><span class="f">04-3_模型详情与人员额度.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/04_模型管理/04-4_用量统计.png" target="_blank"><img loading="lazy" src="screens/04_模型管理/04-4_用量统计.png" alt="用量统计：指标卡 + 按模型/按部门消耗与额度使用率"></a>
+        <figcaption>
+          <div class="t">用量统计：指标卡 + 按模型/按部门消耗与额度使用率</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/model/usage</code><span class="f">04-4_用量统计.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="05_运维管理">
+    <h2>05 · 运维管理 <span class="cnt">2 张</span></h2>
+    <p class="desc">内网镜像仓库查看与归档上传；也可由构建机直接 push，管理端为无构建机场景的便捷入口。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/05_运维管理/05-1_镜像管理.png" target="_blank"><img loading="lazy" src="screens/05_运维管理/05-1_镜像管理.png" alt="镜像管理：仓库概览（37 个标签 / 23.3 GB）+ 镜像清单 + 推送说明"></a>
+        <figcaption>
+          <div class="t">镜像管理：仓库概览（37 个标签 / 23.3 GB）+ 镜像清单 + 推送说明</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/ops/images</code><span class="f">05-1_镜像管理.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/05_运维管理/05-2_上传镜像.png" target="_blank"><img loading="lazy" src="screens/05_运维管理/05-2_上传镜像.png" alt="上传镜像：镜像归档上传、仓库名/标签、进度"></a>
+        <figcaption>
+          <div class="t">上传镜像：镜像归档上传、仓库名/标签、进度</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/ops/images</code><span class="f">05-2_上传镜像.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="06_能力授权">
+    <h2>06 · 能力授权 <span class="cnt">10 张</span></h2>
+    <p class="desc">「谁能用哪个能力」的治理闭环：授权台发放/撤销、能力目录自助申请、申请审批即时生效、权限复核例外制。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/06_能力授权/06-1_授权台_查用户权限.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-1_授权台_查用户权限.png" alt="授权台：查用户权限（有效授权关系、来源、有效期、写工具影响面）"></a>
+        <figcaption>
+          <div class="t">授权台：查用户权限（有效授权关系、来源、有效期、写工具影响面）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/authz/desk</code><span class="f">06-1_授权台_查用户权限.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-2_新增授权.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-2_新增授权.png" alt="新增授权：选能力 → 选对象 → 选效果与期限 → 填说明"></a>
+        <figcaption>
+          <div class="t">新增授权：选能力 → 选对象 → 选效果与期限 → 填说明</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/desk</code><span class="f">06-2_新增授权.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-3_撤销授权确认.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-3_撤销授权确认.png" alt="撤销授权二次确认（只删关系、留痕）"></a>
+        <figcaption>
+          <div class="t">撤销授权二次确认（只删关系、留痕）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/desk</code><span class="f">06-3_撤销授权确认.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-4_能力目录.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-4_能力目录.png" alt="能力目录：32 项能力（授权范围/我的权限/申请入口）"></a>
+        <figcaption>
+          <div class="t">能力目录：32 项能力（授权范围/我的权限/申请入口）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/authz/catalog</code><span class="f">06-4_能力目录.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-5_申请使用.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-5_申请使用.png" alt="申请使用：填申请理由 + 期望有效期"></a>
+        <figcaption>
+          <div class="t">申请使用：填申请理由 + 期望有效期</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/catalog</code><span class="f">06-5_申请使用.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-6_申请审批列表.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-6_申请审批列表.png" alt="申请审批：待审批申请（申请人/能力/理由/有效期）"></a>
+        <figcaption>
+          <div class="t">申请审批：待审批申请（申请人/能力/理由/有效期）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/authz/requests</code><span class="f">06-6_申请审批列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-7_通过申请确认.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-7_通过申请确认.png" alt="通过申请确认：通过后同一事务内写入授权关系"></a>
+        <figcaption>
+          <div class="t">通过申请确认：通过后同一事务内写入授权关系</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/requests</code><span class="f">06-7_通过申请确认.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-8_权限复核列表.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-8_权限复核列表.png" alt="权限复核：复核清单（周期/例外项/已标记/状态）"></a>
+        <figcaption>
+          <div class="t">权限复核：复核清单（周期/例外项/已标记/状态）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/authz/review</code><span class="f">06-8_权限复核列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-9_创建复核清单.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-9_创建复核清单.png" alt="创建复核清单：填复核周期，自动快照例外项"></a>
+        <figcaption>
+          <div class="t">创建复核清单：填复核周期，自动快照例外项</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/review</code><span class="f">06-9_创建复核清单.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/06_能力授权/06-10_复核处理.png" target="_blank"><img loading="lazy" src="screens/06_能力授权/06-10_复核处理.png" alt="复核处理：例外类型 + 决策（收回/改为限期）"></a>
+        <figcaption>
+          <div class="t">复核处理：例外类型 + 决策（收回/改为限期）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/authz/review</code><span class="f">06-10_复核处理.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="07_系统设置">
+    <h2>07 · 系统设置 <span class="cnt">20 张</span></h2>
+    <p class="desc">用户 / 用户组 / 角色 / 部门 / 菜单 五本台账 + 统一登录配置（占位）。角色含 77 个权限点与 5 档数据作用范围。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/07_系统设置/07-3b_接入模型_访问令牌与配置片段.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-3b_接入模型_访问令牌与配置片段.png" alt="「接入模型」弹窗：兼容基地址、模型编码、访问令牌（隐藏/重置）、config.json 配置片段"></a>
+        <figcaption>
+          <div class="t">「接入模型」弹窗：兼容基地址、模型编码、访问令牌（隐藏/重置）、config.json 配置片段</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-3b_接入模型_访问令牌与配置片段.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-1_用户管理列表.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-1_用户管理列表.png" alt="用户管理：10 个用户（账号/工号/部门/用户组/角色/状态/最近活跃）"></a>
+        <figcaption>
+          <div class="t">用户管理：10 个用户（账号/工号/部门/用户组/角色/状态/最近活跃）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/users</code><span class="f">07-1_用户管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-2_添加用户.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-2_添加用户.png" alt="添加用户：姓名、账号与工号、初始密码、部门与角色"></a>
+        <figcaption>
+          <div class="t">添加用户：姓名、账号与工号、初始密码、部门与角色</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-2_添加用户.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-3_可用模型与访问令牌.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-3_可用模型与访问令牌.png" alt="用户「可用模型」弹窗：已绑定 3 个模型（额度/已使用/剩余/使用率/状态/接入模型）"></a>
+        <figcaption>
+          <div class="t">用户「可用模型」弹窗：已绑定 3 个模型（额度/已使用/剩余/使用率/状态/接入模型）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-3_可用模型与访问令牌.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-4_角色分配.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-4_角色分配.png" alt="角色分配弹窗"></a>
+        <figcaption>
+          <div class="t">角色分配弹窗</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-4_角色分配.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-5_权限来源.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-5_权限来源.png" alt="权限来源弹窗：列出该用户权限点由哪些角色叠加而来"></a>
+        <figcaption>
+          <div class="t">权限来源弹窗：列出该用户权限点由哪些角色叠加而来</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-5_权限来源.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-6_重置密码.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-6_重置密码.png" alt="重置密码弹窗（至少 6 位，重置后旧 token 立即失效）"></a>
+        <figcaption>
+          <div class="t">重置密码弹窗（至少 6 位，重置后旧 token 立即失效）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/users</code><span class="f">07-6_重置密码.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-7_用户组管理列表.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-7_用户组管理列表.png" alt="用户组管理：4 个用户组（成员数/创建时间）"></a>
+        <figcaption>
+          <div class="t">用户组管理：4 个用户组（成员数/创建时间）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/user-groups</code><span class="f">07-7_用户组管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-8_新建用户组.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-8_新建用户组.png" alt="新建用户组：名称 + 用途说明"></a>
+        <figcaption>
+          <div class="t">新建用户组：名称 + 用途说明</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/user-groups</code><span class="f">07-8_新建用户组.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-9_用户组成员维护.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-9_用户组成员维护.png" alt="用户组成员维护：选择成员，保存后整体替换"></a>
+        <figcaption>
+          <div class="t">用户组成员维护：选择成员，保存后整体替换</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/user-groups</code><span class="f">07-9_用户组成员维护.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-10_角色管理列表.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-10_角色管理列表.png" alt="角色管理：13 个角色（系统内置/自定义、权限点、高敏数、作用范围、成员数）"></a>
+        <figcaption>
+          <div class="t">角色管理：13 个角色（系统内置/自定义、权限点、高敏数、作用范围、成员数）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/roles</code><span class="f">07-10_角色管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-11_新建角色.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-11_新建角色.png" alt="新建角色：编码、数据范围 5 档、作用部门、权限点树"></a>
+        <figcaption>
+          <div class="t">新建角色：编码、数据范围 5 档、作用部门、权限点树</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/roles</code><span class="f">07-11_新建角色.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-12_权限矩阵.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-12_权限矩阵.png" alt="角色权限矩阵：按域分组的权限点清单与作用范围"></a>
+        <figcaption>
+          <div class="t">角色权限矩阵：按域分组的权限点清单与作用范围</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/roles</code><span class="f">07-12_权限矩阵.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-13_分配成员.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-13_分配成员.png" alt="角色分配成员：保存后整体替换该角色成员"></a>
+        <figcaption>
+          <div class="t">角色分配成员：保存后整体替换该角色成员</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/roles</code><span class="f">07-13_分配成员.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-14_部门管理列表.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-14_部门管理列表.png" alt="部门管理：7 节点组织树（负责人/成员数/模型额度/排序）"></a>
+        <figcaption>
+          <div class="t">部门管理：7 节点组织树（负责人/成员数/模型额度/排序）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/depts</code><span class="f">07-14_部门管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-15_新增部门.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-15_新增部门.png" alt="新增部门：名称、编码、上级、负责人"></a>
+        <figcaption>
+          <div class="t">新增部门：名称、编码、上级、负责人</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/depts</code><span class="f">07-15_新增部门.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-16_部门配额.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-16_部门配额.png" alt="部门配额：并发任务/存储/组件数/连接器/每人默认额度/重置周期"></a>
+        <figcaption>
+          <div class="t">部门配额：并发任务/存储/组件数/连接器/每人默认额度/重置周期</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/depts</code><span class="f">07-16_部门配额.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-17_菜单管理列表.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-17_菜单管理列表.png" alt="菜单管理：31 个菜单节点（类型/路由/权限点/排序/可见/状态）"></a>
+        <figcaption>
+          <div class="t">菜单管理：31 个菜单节点（类型/路由/权限点/排序/可见/状态）</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/menus</code><span class="f">07-17_菜单管理列表.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-18_新增菜单.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-18_新增菜单.png" alt="新增菜单：上级、类型（目录/菜单）、路由、组件标识、图标、权限点"></a>
+        <figcaption>
+          <div class="t">新增菜单：上级、类型（目录/菜单）、路由、组件标识、图标、权限点</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/menus</code><span class="f">07-18_新增菜单.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/07_系统设置/07-19_编辑菜单.png" target="_blank"><img loading="lazy" src="screens/07_系统设置/07-19_编辑菜单.png" alt="编辑菜单弹窗（含停用目录的连带影响提示）"></a>
+        <figcaption>
+          <div class="t">编辑菜单弹窗（含停用目录的连带影响提示）</div>
+          <div class="m"><span class="kind k-dialog">弹窗</span>
+            <code>/system/menus</code><span class="f">07-19_编辑菜单.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="99_差异证据">
+    <h2>99 · 差异证据 <span class="cnt">2 张</span></h2>
+    <p class="desc">逐页巡检中发现的实现与文案不一致之处，附浏览器实测落点作为证据。</p>
+    <div class="grid">
+      <figure class="card">
+        <a href="screens/99_差异证据/99-1_统一登录配置_路由回落.png" target="_blank"><img loading="lazy" src="screens/99_差异证据/99-1_统一登录配置_路由回落.png" alt="差异证据：菜单「统一登录配置」(/system/unified-login) 实际落点 /overview"></a>
+        <figcaption>
+          <div class="t">差异证据：菜单「统一登录配置」(/system/unified-login) 实际落点 /overview</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/system/unified-login</code><span class="f">99-1_统一登录配置_路由回落.png</span></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a href="screens/99_差异证据/99-2_总览_本期交付范围说明.png" target="_blank"><img loading="lazy" src="screens/99_差异证据/99-2_总览_本期交付范围说明.png" alt="差异证据：总览「本期交付范围」文案声明后续阶段，但对应菜单已上线"></a>
+        <figcaption>
+          <div class="t">差异证据：总览「本期交付范围」文案声明后续阶段，但对应菜单已上线</div>
+          <div class="m"><span class="kind k-page">页面</span>
+            <code>/overview</code><span class="f">99-2_总览_本期交付范围说明.png</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer>
+  采集方式：Playwright 驱动本机 Chrome 无头渲染，逐页等待 networkidle 后整页截图；弹窗与抽屉点开后截图并取消关闭。<br>
+  全程只读浏览，未触发任何保存 / 提交 / 删除 / 确认类写操作，平台数据零变更。
+</footer>
+</body>
+</html>
